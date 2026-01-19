@@ -25,7 +25,6 @@
                     <p>
                         {{ product.category ? product.category.category_name : 'No Category' }}
                     </p>
-
                     <p>Qty:{{ product.qty }}</p>
                 </div>
                 <div style="display: flex;">
