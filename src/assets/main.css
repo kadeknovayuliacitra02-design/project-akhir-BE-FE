@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.bg-header {
+  background-color: rgb(225, 224, 224);
+  height: 35px;
+}
+.header-text {
+  justify-content: end;
+  display: flex;
+  padding: 10px;
+}
+.btn-create {
+  height: 35px;
+  width: 125px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: none;
+}
+.search {
+  height: 10px;
+  width: 300px;
+  color: #a7a6a6;
+  border-color: #b0adad;
+  border: 1.5px solid #e3dede;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.btn-clear {
+  height: 33px;
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.box-product {
+  margin-top: 15px;
+  border: 1px solid black;
+  height: 170px;
+  width: 150px;
+  text-align: center;
+}
+.option {
+  height: 32px;
+  width: 210px;
+  margin-top: 20px;
+}
+.box-login {
+  border: 1px solid black;
+  width: 550px;
+  height: 255px;
+}
+.login-wrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+}
+.form-create {
+  display: flex;
+  flex-direction: column; /* ⬅️ INI KUNCINYA */
+}
+.btn-save {
+  height: 35px;
+  width: 95px;
+  background-color: #2b2bed;
+  border: none;
+  border-radius: 13px;
+  margin-top: 15px;
+  color: white;
+}
+.link-page {
+  text-decoration: none;
+  color: black;
+}
+.box-register {
+  border: 1px solid black;
+  width: 650px;
+  height: 355px;
+}
+.register-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+}
+.list-product {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 55px;
+}
+.btn-save-change {
+  height: 35px;
+  width: 105px;
+  background-color: #2b2bed;
+  border: none;
+  border-radius: 13px;
+  margin-top: 15px;
+  color: white;
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown-content {
+   display: none;
+    position: fixed;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+    height: 20px;
+    width: 50px;
+    margin-left: 1173px;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 55px;
+    
+}
+.list-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+.box-product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
