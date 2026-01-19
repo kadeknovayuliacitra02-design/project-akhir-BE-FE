@@ -19,7 +19,7 @@
         <div class="list-product" style="margin-left: 65px;">
             <div v-for="product in products">
                 <div class="box-product">
-                    <img style="padding: 40px;" src="" alt="gambar">
+                    <img style="padding: 30px;" src="" alt="gambar">
                     <p>Rp.{{ product.price }}</p>
                     <p> {{ product.name }}</p>
                     <p>
