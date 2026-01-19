@@ -22,13 +22,18 @@
                     <img style="padding: 40px;" src="" alt="gambar">
                     <p>Rp.{{ product.price }}</p>
                     <p> {{ product.name }}</p>
+                    <p>
+                        {{ product.category ? product.category.category_name : 'No Category' }}
+                    </p>
+
                     <p>Qty:{{ product.qty }}</p>
                 </div>
                 <div style="display: flex;">
                     <button @click="showAlert(product.id)" type="button" style="height: 30px; width: 76px;"><i
                             class="fa-solid fa-trash-can box-trash"></i></button>
-                    <RouterLink :to="'/update/' + product.id"><button type="button" style="height: 30px; width: 76px;"><i
-                                class="fa-solid fa-pen box-pen"></i></button></RouterLink>
+                    <RouterLink :to="'/update/' + product.id"><button type="button"
+                            style="height: 30px; width: 76px;"><i class="fa-solid fa-pen box-pen"></i></button>
+                    </RouterLink>
                 </div>
             </div>
         </div>
@@ -39,7 +44,7 @@
 import api from '@/lib/api';
 import { onMounted, ref, watch } from 'vue';
 
-let timeOut = null; 
+let timeOut = null;
 const searchData = ref()
 const sortData = ref('')
 const products = ref([])
@@ -73,12 +78,12 @@ const deleteProduct = (async (id) => {
 
 })
 const showAlert = (id) => {
-  const result = confirm('Are you sure want to delete this product?')
-  if (result) {
-    deleteProduct(id)
-  }
+    const result = confirm('Are you sure want to delete this product?')
+    if (result) {
+        deleteProduct(id)
+    }
 }
-const clearSearch = (async()=>{
+const clearSearch = (async () => {
     clearTimeout(timeOut)
     searchData.value = ''
     getProduct()
